@@ -1,0 +1,136 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #22223b;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+
+.App-logo {
+  height: 60px;
+  pointer-events: none;
+  margin-right: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  min-height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 32px;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(78,84,200,0.08);
+}
+
+
+.App-link {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.App-link:hover {
+  color: #ffb86b;
+}
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  padding: 0 24px;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 24px;
+}
+
+.nav-menu a {
+  color: #4e54c8;
+  margin: 0 16px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nav-menu a:hover {
+  color: #ff6f61;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #4e54c8;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+th {
+  background: #4e54c8;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background: #f5f7fa;
+}
+tr:hover {
+  background: #e0e7ff;
+}
+
+/* Buttons */
+button, .btn {
+  background: linear-gradient(90deg, #ff6f61 0%, #ffb86b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Misc */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
